@@ -4,8 +4,21 @@ test('Jest runs', () => {
 
 });
 
-it('returns a string', () => {
+it('uses matcher correctly', () => {
     expect(2+2).toBe(4);
+
+    const obj1 = { name: 'Jasmine', school: { name: 'lambda' } };
+    const obj2 = { name: 'Jasmine', school: { name: 'lambda' } };
+
+    // expect(obj1).toBe(obj2); //  false, checks for the same reference
+    expect(obj1).toEqual(obj2); // true, check for equality (deep)
+})
+
+test('returns a string', () => {
+    // Arange: setup the world
+    // Act: execute the code you're testing
+    // Assert: check that it works
+
 })
 
 // Pre-Test //

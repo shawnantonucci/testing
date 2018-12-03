@@ -2,7 +2,7 @@
 /**
  * Accept a string, returns the string with the characters reversed.
  * @param {string} string
- * @returns {returns} reversedString 
+ * @returns {string} reversedString 
  */
 
  function reverseString(string) {
