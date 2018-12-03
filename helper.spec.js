@@ -16,8 +16,13 @@ it('uses matcher correctly', () => {
 
 test('returns a string', () => {
     // Arange: setup the world
+    const input = 'kam';
+
     // Act: execute the code you're testing
+    const result = reverseString(input);
+
     // Assert: check that it works
+    expect(typeof result === 'string').toBeTruthy();
 
 })
 

@@ -5,13 +5,13 @@
  * @returns {string} reversedString 
  */
 
- function reverseString(string) {
-     return '';
- }
+function reverseString(string) {
+    return '';
+}
 
- exports.modules = {
-     reverseString,
- };
+module.exports = {
+    reverseString,
+};
 
 
 
