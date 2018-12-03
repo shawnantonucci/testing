@@ -26,6 +26,26 @@ test('returns a string', () => {
 
 })
 
+test('reverses properly', () => {
+    // Arrange
+    const input = 'tops';
+    const expected = 'spot';
+
+    // Act
+    const actual = reverseString(input);
+    expect(actual).toBe(expected);
+});
+
+test('reverses properly with spaces', () => {
+    // Arrange
+    const input = 'to ps';
+    const expected = 'sp ot';
+
+    // Act
+    const actual = reverseString(input);
+    expect(actual).toBe(expected);
+});
+
 // Pre-Test //
 
 // 1. (pre-test) Summarize what your function does

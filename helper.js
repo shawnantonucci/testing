@@ -6,7 +6,13 @@
  */
 
 function reverseString(string) {
-    return '';
+    const arr = string.split('');
+    const reversed = arr.reverse();
+    let returnVal = '';
+    for (let i = 0; i < reversed.length; i++) {
+        returnVal = returnVal + reversed[i];
+    }
+    return returnVal;
 }
 
 module.exports = {
